@@ -27,8 +27,8 @@ data class  Formacao ( val  nome :  String , val  conteudos :  List < ConteudoEd
 
 diversão  principal () {
     // cursos individuais
-    val moduloPython =  ConteudoEducacional ( " curso python " , 160 )
-    val moduloKotlin =  ConteudoEducacional ( " curso kotlin " , 60 )
+    val moduloJavascript =  ConteudoEducacional ( " curso javascript " , 90 )
+    val moduloKotlin =  ConteudoEducacional ( " curso kotlin " , 40 )
     
     val listaConteudos = mutableListOf < ConteudoEducacional >()
     listConteudos.add(moduloPython)
@@ -38,12 +38,12 @@ diversão  principal () {
     val formacaoFullstack =  Formação ( " Formação Fullstack Developer " , listConteudos, Nivel . INTERMEDIARIO )
     
     // Criar lista de usuários
-    val  André =  Aluno ( " André " , " dede@gmail.com " ) _
-    val  Bruna  =  Aluno ( " Bruna " , " bruna@gmail.com " )
+    val  Joao =  Aluno ( " João " , " joão@gmail.com " ) _
+    val  Carla  =  Aluno ( " Carla " , " carlinha123@gmail.com " )
     
     // matriculando usuários na formação
-    formacaoFullstack.matricular( André é)
-    formacaoFullstack.matricular( Bruna )
+    formacaoFullstack.matricular( Joao )
+    formacaoFullstack.matricular( Carla )
     
     println ( " =========================================== " )
     println ( " Dados da formação " )
